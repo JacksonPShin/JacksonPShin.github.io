@@ -1,0 +1,109 @@
+
+body{
+    background-image: url(https://images.pexels.com/photos/122429/leaf-nature-green-spring-122429.jpeg.jpg);
+  
+}
+
+#footer{
+    margin:10px;
+    border: 10px rgb(11, 73, 19) solid;
+    background-color: rgb(32, 122, 32) ;
+    color:rgb(149, 233, 149);
+    text-align: center;
+}
+
+#video{
+
+    border:10px rgb(11, 73, 19) solid;
+    background-color: rgb(32, 122, 32);
+    color:rgb(149, 233, 149)
+}
+
+#image{
+    text-align: center;
+    margin:10px;
+    margin-bottom:10px;
+    border:10px rgb(11, 73, 19) solid;
+    background-color: rgb(32, 122, 32);
+}
+
+
+#title{
+    border:10px rgb(11, 73, 19) solid;
+    background-color: rgb(32, 122, 32);
+    color:rgb(149, 233, 149);
+    text-align: center;
+    margin:10px;
+    
+}
+
+#history{
+    margin:10px;
+    border: 10px rgb(11, 73, 19) solid;
+    padding-left:10px;
+    padding-right: 10px;
+    background-color: rgb(32, 122, 32) ;
+    color:rgb(149, 233, 149);}
+
+    #cost{
+        margin:10px;
+        border: 10px rgb(11, 73, 19) solid;
+        padding-left:10px;
+        padding-right: 10px;
+        background-color: rgb(32, 122, 32) ;
+        color:rgb(149, 233, 149);}
+
+        #Ingredients{
+    
+            margin:10px;
+            border: 10px rgb(11, 73, 19) solid;
+            padding-left:10px;
+            padding-right: 10px;
+            background-color: rgb(32, 122, 32) ;
+            color:rgb(149, 233, 149);
+        
+        }
+
+        #instructions{
+            margin:10px;
+            border: 10px rgb(11, 73, 19) solid;
+            padding-left:10px;
+            padding-right: 10px;
+            background-color: rgb(32, 122, 32) ;
+            color:rgb(149, 233, 149);
+        
+        }
+
+nav {
+    background-color: rgb(32, 122, 32);
+    border-left:10px rgb(11,73, 19) solid;
+    border-right:10px rgb(11,73, 19) solid;
+    border-bottom:10px rgb(11,73, 19) solid;
+    overflow: hidden;
+}
+      
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+      
+.navbar li {
+    padding: 14px ;
+}
+      
+.navbar a {
+    color: rgb(149, 233, 149);
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+
+.protest-revolution-regular {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }

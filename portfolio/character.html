@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Snow Man Character</title>
+  
+  <style>
+    .head{
+   position: absolute;
+  background-color: white;
+  top: 200px;
+  left: 80px;
+  width: 140px;
+  height: 140px;
+  border-radius: 100px;
+}
+.body{
+   position: absolute;
+  background-color: white;
+  top: 300px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+
+#eyes{
+   position:absolute;
+  top: 240px;
+  left: 164px;
+  width:15px;
+  height:15px;
+  border-radius:100px;
+  background-color:black;
+}
+#eyes2{
+   position:absolute;
+  top: 240px;
+  left: 114px;
+  width:15px;
+  height:15px;
+  border-radius:100px;
+  background-color:black;
+}
+
+.nose{
+  position:absolute;
+  top: 273px;
+  left: 144px;
+  width: 0px;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-left: 55px solid orange;
+  border-bottom: 9px solid transparent;
+}
+#smile1{
+  position:absolute;
+  top: 300px;
+  left: 110px;
+  width:10px;
+  height:10px;
+  border-radius:100px;
+  background-color:black;
+}
+#smile2{
+  position:absolute;
+  top: 310px;
+  left: 128px;
+  width:10px;
+  height:10px;
+  border-radius:100px;
+  background-color:black;
+
+}
+#smile3{
+  position:absolute;
+  top: 313px;
+  left: 145px;
+  width:10px;
+  height:10px;
+  border-radius:100px;
+  background-color:black;
+}
+#smile4{
+  position:absolute;
+  top: 310px;
+  left: 162px;
+  width:10px;
+  height:10px;
+  border-radius:100px;
+  background-color:black;
+}
+#smile5{
+  position:absolute;
+  top: 300px;
+  left: 180px;
+  width:10px;
+  height:10px;
+  border-radius:100px;
+  background-color:black;
+}
+
+#arm1{
+  position: absolute;
+  background-color: #6B4000;
+  width: 10px;
+  height: 80px;
+  top: 300px;
+  left: 230px; 
+  transform: rotate(45deg);
+}
+
+#finger1{
+   position: absolute;
+  background-color: #6B4000;
+  width: 10px;
+  height: 30px;
+  top: 300px;
+  left: 240px; 
+  transform: rotate(-15deg);
+}
+
+#finger2{
+  position: absolute;
+  background-color: #6B4000;
+  width: 10px;
+  height: 30px;
+  top: 317px;
+  left: 255px; 
+  transform: rotate(108deg);
+}
+
+#arm2{
+  position: absolute;
+  background-color: #6B4000;
+  width: 10px;
+  height: 80px;
+  top: 300px;
+  left: 50px; 
+  transform: rotate(-45deg);
+}
+
+#finger3{
+   position: absolute;
+  background-color: #6B4000;
+  width: 10px;
+  height: 30px;
+  top: 300px;
+  left: 40px; 
+  transform: rotate(15deg);
+}
+
+#finger4{
+  position: absolute;
+  background-color: #6B4000;
+  width: 10px;
+  height: 30px;
+  top: 317px;
+  left: 25px; 
+  transform: rotate(-108deg);
+}
+
+#hat1{
+  position:absolute;
+  width:120px;
+  height:20px;
+  top:200px;
+  left:86px;
+  border:gray solid 2px;
+  background-color:black;
+  border-radius:20px
+}
+
+#hat2{
+  position:absolute;
+  width:100px;
+  height:100px;
+  top:116px;
+  left:96px;
+  background-color:black;
+  border-radius:20px
+}
+
+
+#button1{
+  position:absolute;
+  top: 360px;
+  left: 143px;
+  width:13px;
+  height:13px;
+  border-radius:100px;
+  background-color:black;
+  border:gray solid 2px;
+}
+
+
+#button2{
+  position:absolute;
+  top: 400px;
+  left: 143px;
+  width:13px;
+  height:13px;
+  border-radius:100px;
+  background-color:black;
+  border:gray solid 2px;
+}
+
+
+#button3{
+  position:absolute;
+  top: 440px;
+  left: 143px;
+  width:13px;
+  height:13px;
+  border-radius:100px;
+  background-color:black;
+  border:gray solid 2px;
+}
+
+#textboxs{
+  position:absolute;
+  width:180px;
+  height:90px;
+  top:100px;
+  left:255px;
+  background-color:white;
+  border:3px black solid;
+  border-radius:20px;
+}
+
+#greeting{
+  position:absolute;
+  top:135px;
+  left:270px;
+  font-size:20px;
+  
+}
+
+#textbubble1{
+  position:absolute;
+  top: 202px;
+  left: 225px;
+  width:13px;
+  height:13px;
+  border-radius:100px;
+  border:black solid 2px;
+  background-color:white;
+}
+body{
+  background-color:lightblue
+}
+
+  </style>
+</head>
+<body>
+  <div class="head"></div>
+
+  <div class="body"></div>
+
+  <div id="eyes"></div>
+
+  <div id="eyes2"></div>
+
+  <div class="nose"></div>
+
+  <div id="smile1"></div>
+
+  <div id="smile2"></div>
+
+  <div id="smile3"></div>
+
+  <div id="smile4"></div>
+
+  <div id="smile5"></div>
+
+  <div id="arm1"></div>
+
+  <div id="finger1"></div>
+
+  <div id="finger2"></div>
+
+  <div id="arm2"></div>
+
+   <div id="finger3"></div>
+
+  <div id="finger4"></div>
+  
+  <div id="hat1"></div>
+  <div id="hat2"></div>
+  <div id="button1"></div>
+  <div id="button2"></div>
+  <div id="button3"></div>
+  <div id="textboxs"></div>
+  <div id="greeting">Merry Christmas!!</div>
+  <div id="textbubble1"></div>
+    
+  
+</body>
+</html>

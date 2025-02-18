@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>???</title>
+  <style>
+    .pop-up-content {
+      background-image: url('https://cdn.vectorstock.com/i/1000x1000/58/59/radiation-warning-symbol-black-and-yellow-vector-25755859.webp');
+      background-size: fill;
+      background-position: center;
+      border-radius: 2%;
+    }
+
+    #move {
+      text-indent: 30px;
+    }
+
+    #featured-review {
+      display: block;
+      width: 100%;
+    }
+
+    #window-mask {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      display: none;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 99999999;
+    }
+
+    #window-mask.open {
+      display: block;
+    }
+
+    .pop-up {
+      width: 70%;
+      height: 80%;
+      position: absolute;
+      left: 15%;
+      top: 20%;
+      margin-top: -50px;
+    }
+
+    .pop-up-content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    #window-mask.hidden {
+      display: none;
+    }
+
+    .pop-up-header {
+      width: 100%;
+      height: 40%;
+    }
+
+    .pop-up p {
+      margin: 10px 50px;
+    }
+
+    .pop-up h3 {
+      margin: 10px 50px;
+    }
+
+    .pop-up .response {
+      width: 100%;
+      height: 20%;
+      margin-top: 10px;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.12);
+    }
+
+    .pop-up .response div {
+      width: 49%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      text-align: center;
+      line-height: 90px;
+    }
+
+    .pop-up .response div:first-child {
+      box-shadow: 0 6px 0 6px rgba(0, 0, 0, 0.12);
+    }
+
+    .description {
+      height: 75px;
+      overflow-y: scroll;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+
+    .disabled-link {
+      pointer-events: none;
+      color: gray;
+      text-decoration: none;
+    }
+
+
+    body {
+      transition: opacity 1s ease-out;
+    }
+
+
+    .fade-out {
+      opacity: 0;
+    }
+    .fade-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://media1.tenor.com/m/c0Qcj4PYbnAAAAAd/mindblown-nuts.gif'); 
+  background-size: cover;
+  background-position: center; 
+  opacity: 0;
+  pointer-events: none; 
+  transition: opacity 1s ease-out;
+  z-index: 99999;
+}
+
+.fade-overlay.visible {
+  opacity: 1; 
+}
+body.fade-out {
+  transition: opacity 4s ease-out;
+  opacity: 0;
+}
+  </style>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  
+    <div id="window-mask" class="open">
+        <div class="pop-up">
+            <div class="pop-up-content">
+                <div class="pop-up-header"></div>
+
+                <div class="description">
+                    <h2><b><strong><u>DANGER! DANGER! DANGER! DANGER! DANGER! DANGER! DANGER! DANGER!</u></strong></b></h2>
+                </div>
+                <div class="description">
+                    <h2><b><strong><u>If The Cat Falls Asleep the page WILL Be NUKED!
+                      Tap The Cat To Wake It Up
+                    </u></strong></b></h2>
+                </div>
+                <div class="response">
+                    <h2 id="move"><u><b>Close With Caution!</b></u></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="Nuked.html" id="link" class="disabled-link">
+      <img id="gifImage" src="media/Sleepy-static.png" width="500px" height="500px" class="center">
+    </a>
+  <script>
+    const mask = document.getElementById('window-mask');
+    const closeButton = document.getElementById('move');
+    const gifImage = document.getElementById('gifImage');
+    const link = document.getElementById('link');
+    const fadeOverlay = document.createElement('div'); 
+    fadeOverlay.classList.add('fade-overlay');
+    document.body.appendChild(fadeOverlay); 
+
+
+  closeButton.addEventListener('click', () => {
+    
+    mask.classList.remove('open');
+    mask.classList.add('hidden');
+
+
+    gifImage.src = "media/Sleepy.gif"; 
+
+
+    setTimeout(() => {
+    fadeOverlay.classList.add('visible'); 
+    document.body.classList.add('fade-out'); 
+
+    
+    setTimeout(() => {
+      window.location.href = "Nuked.html";
+    }, 5000); 
+    }, 3750); 
+    });
+
+  </script>
+    <script>
+      setTimeout(function() {
+        
+        const fadeOverlay = document.createElement('div'); 
+        fadeOverlay.classList.add('fade-overlay');
+        document.body.appendChild(fadeOverlay); 
+      
+        
+        setTimeout(function() {
+          fadeOverlay.classList.add('visible'); 
+        }, 10); 
+      
+        
+        document.body.classList.add('fade-out');
+      
+        
+        setTimeout(function() {
+          window.location.href = "Nuked.html"; 
+        }, 1000); 
+      }, 3750);
+    </script>
+    <script>
+      const mask = document.getElementById('window-mask');
+      const closeButton = document.getElementById('move');
+      const gifImage = document.getElementById('gifImage');
+      const link = document.getElementById('link');
+
+      
+      closeButton.addEventListener('click', () => {
+        mask.classList.remove('open');
+        mask.classList.add('hidden');
+
+        
+        gifImage.src = "media/Sleepy.gif";  
+      });
+
+      
+      setTimeout(function() {
+        
+        document.body.classList.add('fade-out');
+
+        
+        setTimeout(function() {
+          window.location.href = "Nuked.html";
+        }, 1000); 
+      }, 4000); 
+    </script>
+
+    <script src="app.js"></script>
+    <script src="cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+</body>
+</html>
